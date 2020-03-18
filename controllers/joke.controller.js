@@ -36,7 +36,7 @@ class JokeController {
         Joke.findByIdAndUpdate({_id: req.params._id}, req.body, {
             runValidators: true
         })
-            .then(() => res.json({msg: "joke did land"}))
+            .then( () => res.json({msg: "joke did land"}))
             .catch(err => res.json(err));
     }
 

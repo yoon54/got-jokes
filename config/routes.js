@@ -6,4 +6,5 @@ module.exports = app => {
     app.delete("/api/jokes/:_id", Jokes.delete);
     app.get("/api/jokes/random",Jokes.random);
     app.get("/api/jokes/:_id",Jokes.getOne);
+    app.put("/api/jokes/:_id",Jokes.update);
 }
